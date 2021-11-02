@@ -1,0 +1,222 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+.custom-font-h3{font-size: 40px;}
+.home-slider-h2{font-size: 48px; line height: auto;}
+.about-section p{font-size: 16px;line-height: 28px;}
+.service-box h4{font-size:24px;}
+.contact-section{background-image: url(../images/download.jpg); background-size: 100%; background-repeat:no-repeat;}
+.container{
+    max-width: 1170px;
+        margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+
+.footer{
+    background-color: #24262b;
+padding: 70px 0;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+}
+.footer-co66666l h4  ::before{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-10px;
+    background-color:#e91e63;
+    height:2px
+    box-sizing:border-box;
+    width:50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color:#ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color:#bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color:#ffffff;
+    padding-left: 8px;
+}
+.footer-col.social-links a{
+    display: inline-block;
+    height:40px;
+    width:40px;
+    background-color:rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align:center;
+    line-height:40px;
+    border-radius:50%;
+    color: #ffffff;
+    transition:all 0.5s ease;
+}
+.footer-col.social-links a:hover{
+    color:#7d828b;
+    background-color: #ffffff;
+}
+.btn1{
+    border:none;
+    outline:none;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.btn1:hover{
+    background:white;
+    border:1px solid;
+    color:black;
+}
+/* responsive*/
+@media(max-width:767px){
+    .footer-col{
+        width: 50%;
+         margin-bottom: 30px;
+
+    }
+}
+@media(max-width:574px){
+    .footer-col{
+        width: 100%;
+    }
+}
+.myLeftCtn{
+    position: relative;
+    background:black;
+    border-radius: 25px;
+    height: 100%;
+    padding: 70px 0;
+    
+}
+.myCard{
+    position: relative;
+    background: #ffffff;
+    height: 100%;
+    border-radius: 25px;
+    -webkit-box-shadow:0px 10px 40px -10px rgba(0,0,0,0.7);
+    -maz-box-shadow:0px,10px 40px -1opx rgba(0,0,0,0.7)
+    box-shadow:0px 10px 40px -10px rgba(0,0,0,0.7);
+}
+.myLeftCtn header{
+    color:white;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.butt:hover{
+    background:black;
+    border:1px solid;
+    color:white;
+}
+.butt{
+   
+    outline:none;
+    height: 50px;
+    width: 25%;
+    background-color:white;
+    color:black;
+    border-radius: 4px;
+    font-weight: bold;}
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+      
+      /* Create four equal columns that sits next to each other */
+      .column {
+        flex: 25%;
+        max-width: 33.3%;
+        padding: 0 4px;
+      }
+      
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+       
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s linear;
+      }
+      .column img:hover {
+        filter: grayscale(0);
+      }
+      @media screen and (max-width: 800px) {
+      
+        
+      }
+      
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column {
+          flex: 100%;
+          max-width: 100%;
+        }
+        .column img {
+            filter: grayscale(0) brightness(1);
+          }
+        }
+        
+        
+        .carousel-fade.carousel-item{
+            opacity: 0;
+            transition-duration: .2s;
+            transition-property: opacity;
+                
+
+        }
+        
+        .carousel-fade.carousel-item-next,
+        .carousel-fade.carousel-item-prev
+        {
+            opacity: 1;
+
+        }
+
+        .carousel-fade.active.carousel-item-next,
+        .carousel-fade.active.carousel-item-prev
+        {
+            opacity: 0;
+        }
+           
+        .carousel-fade.active.carousel-item-next,
+        .carousel-fade.active.carousel-item-prev,
+        .carousel-fade.carousel-item-next,
+        .carousel-fade.carousel-item-prev
+        {
+            transform: translate(0);
+            transform: translate3d(0,0,0);
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-item{
+            opacity: 1;
+        }
